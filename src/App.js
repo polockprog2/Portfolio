@@ -7,6 +7,7 @@ import RecentProjects from "./components/RecentProjects";
 import PremiumTools from "./components/PremiumTools";
 import BlogSection from "./components/BlogSection";
 import ContactForm from "./components/ContactForm";
+import GithubStats from "./components/GithubStats";
 
 
 function App() {
@@ -54,18 +55,18 @@ function App() {
         {/* Sections */}
         <RecentProjects />
         <PremiumTools />
+        <GithubStats/>
         <BlogSection />
         <ContactForm />
         
+        
+        {/* Footer */}
+        <footer className="mt-12 text-center text-gray-500 text-sm">  
+          © {new Date().getFullYear()} Samir Islam Polock. All rights reserved.
+        </footer>
+        <hr className="border-t-2 border-cyan-400 w-1/2 my-10 opacity-60 animate-fade-in delay-300" />
 
-        {/* Floating Button */}
-        <motion.button
-          className="fixed left-6 bottom-8 bg-red-600 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 shadow-lg hover:bg-red-700 transition z-50"
-          whileHover={{ scale: 1.08 }}
-          whileTap={{ scale: 0.97 }}
-        >
-          <span>📺</span> Video Tutorial
-        </motion.button>
+       
       </main>
     </motion.div>
   );
