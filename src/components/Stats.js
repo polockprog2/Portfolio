@@ -2,9 +2,8 @@ import React from "react";
 import { useFadeInOnScroll } from "../utils/animations";
 
 const stats = [
-  { value: "+12", label: "YEARS OF EXPERIENCE" },
-  { value: "+46", label: "PROJECTS COMPLETED" },
-  { value: "+20", label: "WORLDWIDE CLIENTS" },
+  { value: "+4", label: "YEARS OF EXPERIENCE" },
+  { value: "+14", label: "PROJECTS COMPLETED" },
 ];
 
 const Stats = () => {

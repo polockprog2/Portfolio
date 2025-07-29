@@ -8,6 +8,7 @@ import PremiumTools from "./components/PremiumTools";
 import BlogSection from "./components/BlogSection";
 import ContactForm from "./components/ContactForm";
 
+
 function App() {
   return (
     <motion.div
@@ -24,7 +25,10 @@ function App() {
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col px-4 md:px-8 lg:px-12 py-12 max-w-3xl mx-auto w-full">
-        <Navbar />
+        {/* Navbar */}
+        <aside className="justify-end flex">
+          <Navbar/>
+        </aside>
         {/* Hero Section */}
         <motion.div
           className="mt-8"
@@ -52,6 +56,7 @@ function App() {
         <PremiumTools />
         <BlogSection />
         <ContactForm />
+        
 
         {/* Floating Button */}
         <motion.button

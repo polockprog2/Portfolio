@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from "../assets/profile.jpg";
+import profileImg from "../assets/pink.jpg";
 
 const socials = [
   { href: "https://dribbble.com/", icon: <svg width="24" height="24" fill="none" stroke="#FF6A3A" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12c6.5-2.5 14.5-2.5 20 0"/><path d="M12 2c2.5 6.5 2.5 14.5 0 20"/></svg> },

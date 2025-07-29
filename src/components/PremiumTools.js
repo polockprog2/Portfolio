@@ -3,40 +3,52 @@ import { useFadeInOnScroll } from "../utils/animations";
 
 const tools = [
   {
-    name: "Framer",
-    description: "Website Builder",
-    link: "https://framer.com/?via=mejed_k",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framer/framer-original.svg"
+    name: ".NET",
+    description: "Framework for building Windows and web applications",
+    link: "https://dotnet.microsoft.com/",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
   },
   {
-    name: "Figma",
-    description: "Design Tool",
-    link: "https://www.figma.com/",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+    name: "Java",
+    description: "Object-oriented programming language",
+    link: "https://www.java.com/",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
   },
   {
-    name: "Lemon Squeezy",
-    description: "Payments Provider",
-    link: "https://www.lemonsqueezy.com/",
-    icon: "https://www.lemonsqueezy.com/favicon.ico"
+    name: "Python",
+    description: "Popular language for scripting and data science",
+    link: "https://www.python.org/",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
   },
   {
-    name: "ChatGPT",
-    description: "AI Assistant",
-    link: "https://chat.openai.com/",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+    name: "Node.js",
+    description: "JavaScript runtime for backend development",
+    link: "https://nodejs.org/",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
   },
   {
-    name: "Notion",
-    description: "Productivity Tool",
-    link: "https://www.notion.so/",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg"
+    name: "React.js",
+    description: "JavaScript library for building user interfaces",
+    link: "https://react.dev/",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
   },
   {
-    name: "Nextjs",
-    description: "React framework",
-    link: "https://nextjs.org/",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+    name: "TensorFlow",
+    description: "Open-source machine learning framework",
+    link: "https://www.tensorflow.org/",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+  },
+  {
+    name: "MS SQL Server",
+    description: "Microsoft's relational database system",
+    link: "https://www.microsoft.com/en-us/sql-server",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+  },
+  {
+    name: "Oracle",
+    description: "Enterprise relational database system",
+    link: "https://www.oracle.com/database/",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
   }
 ];
 
@@ -45,8 +57,8 @@ const PremiumTools = () => {
   return (
     <section className="mt-16" ref={fadeRef}>
       <div className="mb-8">
-        <h2 className="text-5xl font-extrabold text-white leading-none">PREMIUM</h2>
-        <h3 className="text-5xl font-extrabold text-gray-800 leading-none" style={{letterSpacing: '-2px'}}>TOOLS</h3>
+        <h2 className="text-5xl font-extrabold text-white leading-none">LANGUAGES & TECH</h2>
+        <h3 className="text-5xl font-extrabold text-gray-800 leading-none" style={{letterSpacing: '-2px'}}>STACK</h3>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {tools.map((tool, idx) => (

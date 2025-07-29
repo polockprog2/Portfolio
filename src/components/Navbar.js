@@ -1,10 +1,11 @@
 import React from "react";
+import { FiHome, FiFolder, FiEdit2, FiMail } from "react-icons/fi"; // Modern Feather icons
 
 const navItems = [
-  { icon: "🏠", label: "Home" },
-  { icon: "📁", label: "Portfolio" },
-  { icon: "📝", label: "Blog" },
-  { icon: "✏️", label: "Contact" },
+  { icon: <FiHome />, label: "Home" },
+  { icon: <FiFolder />, label: "Portfolio" },
+  { icon: <FiEdit2 />, label: "Blog" },
+  { icon: <FiMail />, label: "Contact" },
 ];
 
 const Navbar = () => (
@@ -16,8 +17,12 @@ const Navbar = () => (
         tabIndex={0}
         aria-label={item.label}
       >
-        <span className="text-3xl mb-1 group-hover:scale-125 group-focus:scale-125 transition-transform duration-200 drop-shadow-lg">{item.icon}</span>
-        <span className="text-xs font-semibold tracking-wide opacity-80 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-200">{item.label}</span>
+        <span className="text-3xl mb-1 group-hover:scale-125 group-focus:scale-125 transition-transform duration-200 drop-shadow-lg">
+          {item.icon}
+        </span>
+        <span className="text-xs font-semibold tracking-wide opacity-80 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-200">
+          {item.label}
+        </span>
       </button>
     ))}
   </nav>
