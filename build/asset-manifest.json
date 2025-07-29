@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/polockprog2/static/css/main.0d8e833d.css",
-    "main.js": "/polockprog2/static/js/main.2279f782.js",
-    "static/media/pink.jpg": "/polockprog2/static/media/pink.36733b79d9070f422e9b.jpg",
-    "index.html": "/polockprog2/index.html",
-    "main.0d8e833d.css.map": "/polockprog2/static/css/main.0d8e833d.css.map",
-    "main.2279f782.js.map": "/polockprog2/static/js/main.2279f782.js.map"
+    "main.css": "/Portfolio.github.io/static/css/main.0d8e833d.css",
+    "main.js": "/Portfolio.github.io/static/js/main.ce23bfc5.js",
+    "static/media/pink.jpg": "/Portfolio.github.io/static/media/pink.36733b79d9070f422e9b.jpg",
+    "index.html": "/Portfolio.github.io/index.html",
+    "main.0d8e833d.css.map": "/Portfolio.github.io/static/css/main.0d8e833d.css.map",
+    "main.ce23bfc5.js.map": "/Portfolio.github.io/static/js/main.ce23bfc5.js.map"
   },
   "entrypoints": [
     "static/css/main.0d8e833d.css",
-    "static/js/main.2279f782.js"
+    "static/js/main.ce23bfc5.js"
   ]
 }
