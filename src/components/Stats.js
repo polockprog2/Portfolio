@@ -7,13 +7,13 @@ const stats = [
 ];
 
 const Stats = () => {
-  const fadeRef = useFadeInOnScroll(700, 0);
+  const fadeRef = useFadeInOnScroll({ duration: 700, offset: 0 });
   return (
-    <div className="flex gap-8 my-8" ref={fadeRef}>
+    <div className="flex gap-6 my-8" ref={fadeRef}>
       {stats.map((stat, idx) => (
-        <div key={idx} className="flex flex-col items-center rounded-2xl p-8 shadow-2xl bg-gradient-to-br from-orange-400/30 via-yellow-200/20 to-fuchsia-400/20 border-2 border-white/20 backdrop-blur-xl hover:scale-105 transition-transform duration-300">
-          <span className="text-6xl font-extrabold text-white drop-shadow-lg tracking-tight bg-gradient-to-r from-orange-400 via-pink-500 to-blue-500 bg-clip-text text-transparent" style={{fontFamily: 'Fira Sans, sans-serif'}}>{stat.value}</span>
-          <span className="text-lg text-gray-200 mt-3 font-semibold tracking-wide" style={{fontFamily: 'Fira Sans, sans-serif'}}>{stat.label}</span>
+        <div key={idx} className="flex flex-col items-center rounded-2xl p-6 shadow-lg bg-white/5 backdrop-blur border border-white/10 hover:scale-105 transition-all duration-300">
+          <span className="text-5xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-500 to-fuchsia-500 bg-clip-text text-transparent">{stat.value}</span>
+          <span className="text-sm text-gray-300 mt-2 font-medium tracking-wide">{stat.label}</span>
         </div>
       ))}
     </div>

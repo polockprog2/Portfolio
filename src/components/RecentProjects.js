@@ -40,7 +40,7 @@ const projects = [
 ];
 
 const RecentProjects = () => {
-	const fadeRef = useFadeInOnScroll();
+	const fadeRef = useFadeInOnScroll({ duration: 800, offset: 0 });
 	return (
 		<section className="mt-16" ref={fadeRef}>
 			<div className="mb-10 text-center">
@@ -52,18 +52,18 @@ const RecentProjects = () => {
 					learning. Click any card to view the code on GitHub.
 				</p>
 			</div>
-			<div className="flex flex-col gap-6">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 				{projects.map((p, idx) => (
 					<a
 						key={idx}
 						href={p.link}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="group bg-[#181513] hover:bg-cyan-950/60 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-cyan-900/40 hover:border-cyan-400 flex flex-row items-center hover:-translate-y-1 focus:ring-2 focus:ring-cyan-400 outline-none"
+						className="group bg-gradient-to-br from-white/5 to-white/0 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10 hover:border-cyan-400 flex flex-row items-center hover:-translate-y-1 focus:ring-2 focus:ring-cyan-400 outline-none backdrop-blur"
 						title={`View ${p.name} on GitHub`}
 						tabIndex={0}
 					>
-						<div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg mr-6 border-2 border-cyan-700 group-hover:border-cyan-400 group-hover:scale-105 transition-transform duration-200 bg-[#23201c] flex-shrink-0">
+						<div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg mr-6 border border-white/10 group-hover:border-cyan-400 group-hover:scale-105 transition-transform duration-200 bg-white/10 flex-shrink-0 backdrop-blur">
 							<img
 								src={p.icon}
 								alt={p.name}
@@ -71,7 +71,7 @@ const RecentProjects = () => {
 							/>
 						</div>
 						<div className="flex-1 flex flex-col justify-center">
-							<div className="text-lg font-bold text-cyan-200 mb-1 group-hover:text-cyan-400 transition-colors duration-200">
+							<div className="text-lg font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors duration-200">
 								{p.name}
 							</div>
 							<div className="text-sm text-gray-300 mb-2">

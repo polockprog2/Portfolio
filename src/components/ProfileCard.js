@@ -22,9 +22,10 @@ const socials = [
 
 const ProfileCard = () => (
   <div
-    className="rounded-3xl shadow-2xl pt-6 pb-14 px-10 w-full max-w-md flex flex-col items-center relative z-10 border border-white/20 bg-white/20 backdrop-blur-2xl"
+    className="rounded-3xl shadow-2xl pt-6 pb-14 px-10 w-full max-w-md flex flex-col items-center relative z-10 border border-white/15 bg-white/10 backdrop-blur-2xl hover:bg-white/15 transition"
     style={{
-      background: "linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.10) 100%)",
+      background: "linear-gradient(135deg, rgba(255,255,255,0.20) 0%, rgba(255,255,255,0.06) 100%)",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.06)",
       marginTop: "-40px"
     }}
   >
@@ -34,7 +35,7 @@ const ProfileCard = () => (
           <path d="M2 32c12-12 48-12 60 0" stroke="#FF6A3A" strokeWidth="3" strokeDasharray="8 6" />
         </svg>
       </div>
-      <div className="rounded-2xl overflow-hidden w-full h-full bg-gradient-to-tr from-orange-500 to-red-500 flex items-center justify-center shadow-xl border-4 border-white/30">
+      <div className="rounded-2xl overflow-hidden w-full h-full bg-gradient-to-tr from-orange-500 to-red-500 flex items-center justify-center shadow-xl border-2 border-white/30 ring-1 ring-white/10">
         <img
           src={profileImg}
           alt="Samir Islam Polock"
@@ -50,7 +51,7 @@ const ProfileCard = () => (
       >
         Samir Islam Polock
       </h2>
-      <span className="text-lg font-semibold text-gray-700 mb-2">Software Developer</span>
+      <span className="text-lg font-semibold text-gray-200 mb-2">Software Developer</span>
       <span className="bg-orange-500 rounded-full p-2 text-white text-xl mb-2 shadow-lg animate-bounce">
         <svg width="24" height="24" fill="none" stroke="white" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M12 2v6m0 0a6 6 0 016 6c0 3.31-2.69 6-6 6s-6-2.69-6-6a6 6 0 016-6z" />
@@ -71,7 +72,7 @@ const ProfileCard = () => (
           href={s.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group hover:scale-125 transition-transform duration-200 shadow-md rounded-full p-2 bg-white/60 hover:bg-orange-100"
+          className="group hover:scale-125 transition-transform duration-200 shadow-md rounded-full p-2 bg-white/70 hover:bg-white"
           aria-label={s.label}
         >
           {s.icon}

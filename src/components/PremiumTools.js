@@ -53,23 +53,25 @@ const tools = [
 ];
 
 const PremiumTools = () => {
-  const fadeRef = useFadeInOnScroll(900, 50);
+  const fadeRef = useFadeInOnScroll({ duration: 900, offset: 50 });
   return (
     <section className="mt-16" ref={fadeRef}>
-      <div className="mb-8">
-        <h2 className="text-5xl font-extrabold text-white leading-none">LANGUAGES & TECH</h2>
-        <h3 className="text-5xl font-extrabold text-gray-800 leading-none" style={{letterSpacing: '-2px'}}>STACK</h3>
+      <div className="text-center mb-10">
+        <h2 className="text-4xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-500 to-fuchsia-500 bg-clip-text text-transparent drop-shadow-lg">
+          Languages & Tech Stack
+        </h2>
+        <p className="text-gray-400 mt-2">Technologies I work with</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {tools.map((tool, idx) => (
-          <a key={idx} href={tool.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 bg-black/80 rounded-xl p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-            <div className="flex items-center justify-center w-16 h-16 bg-white rounded-lg mr-2">
-              <img src={tool.icon} alt={tool.name} className="w-10 h-10 object-contain" />
+          <a key={idx} href={tool.link} target="_blank" rel="noopener noreferrer" className="group bg-white/5 backdrop-blur rounded-2xl p-6 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-white/10 hover:border-cyan-400">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="flex items-center justify-center w-12 h-12 bg-white rounded-xl shadow group-hover:scale-110 transition-transform">
+                <img src={tool.icon} alt={tool.name} className="w-8 h-8 object-contain" />
+              </div>
+              <div className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">{tool.name}</div>
             </div>
-            <div>
-              <div className="text-2xl font-extrabold text-white mb-1" style={{fontFamily: 'Fira Sans, sans-serif'}}>{tool.name}</div>
-              <div className="text-base text-gray-300 font-medium">{tool.description}</div>
-            </div>
+            <div className="text-sm text-gray-300 leading-relaxed">{tool.description}</div>
           </a>
         ))}
       </div>
